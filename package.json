@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start:ssr": "node ./server/",
+    "build": "react-scripts build && npm run ssr",
     "ssr": "cross-env NODE_ENV=production webpack --config ./webpack.ssr.config.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
