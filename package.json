@@ -10,7 +10,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "ssr": "cross-env NODE_ENV=production webpack --config ./webpack.ssr.config.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
   }
 }
